@@ -1,0 +1,30 @@
+﻿# ZenEconomy Messages (MiniMessage Adventure format)
+# Use gradient, color, click and hover tags!
+prefix: "<gradient:#00FFA3:#00B8FF><bold>ZenEconomy</bold></gradient> <dark_gray>»</dark_gray> "
+
+no-permission: "<red>No tienes permisos suficientes para ejecutar este comando."
+player-only: "<red>Este comando solo puede ser ejecutado por jugadores en línea."
+player-not-found: "<red>El jugador <yellow><target></yellow> no fue encontrado o nunca ha entrado al servidor."
+invalid-currency: "<red>La moneda especificada <yellow><currency></yellow> no existe."
+invalid-amount: "<red>La cantidad debe ser un número válido y positivo."
+cannot-pay-self: "<red>No puedes enviarte dinero o divisas a ti mismo."
+insufficient-funds: "<red>No tienes fondos suficientes de <yellow><currency></yellow>. Tu balance actual es: <value>."
+max-balance-reached: "<red>La transacción excede el balance máximo permitido de <yellow><currency></yellow> (<max>)."
+min-balance-reached: "<red>La transacción violaría el balance mínimo permitido (<min>)."
+
+balance-self: "<gray>Tu balance de <currency_display>: <green><balance></green>"
+balance-others: "<gray>Balance de <yellow><target></yellow> en <currency_display>: <green><balance></green>"
+
+pay-sent: "<gray>Has enviado <green><amount></green> a <yellow><target></yellow>."
+pay-received: "<gray>Has recibido <green><amount></green> de <yellow><sender></yellow>."
+
+admin-give: "<gray>Has acreditado <green><amount></green> a <yellow><target></yellow>."
+admin-take: "<gray>Has retirado <red><amount></red> a <yellow><target></yellow>."
+admin-set: "<gray>Has establecido el balance de <yellow><target></yellow> en <green><amount></green>."
+admin-reset: "<gray>Has reiniciado la cuenta de <yellow><target></yellow> en la moneda <yellow><currency></yellow>."
+
+reload-success: "<green>¡Configuración, mensajes y monedas recargadas correctamente!"
+
+baltop-header: "<gradient:#00FFA3:#00B8FF><bold>--- Top Balances (<currency_name>) [Pág. <page>/<max_pages>] ---</bold></gradient>"
+baltop-entry: "<gold>#<rank></gold> <yellow><player></yellow><gray>:</gray> <green><balance></green>"
+baltop-footer: "<gray>Usa <click:run_command:'/baltop <currency> <next_page>'><aqua>/baltop <currency> <next_page></aqua></click> para ver la siguiente página."

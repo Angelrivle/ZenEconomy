@@ -1,0 +1,25 @@
+﻿name: ZenEconomy
+version: '${project.version}'
+main: com.cuac_xd.zeneconomy.ZenEconomyPlugin
+api-version: '1.21'
+author: cuac_xd
+description: Modern multi-currency economy plugin with dedicated per-currency commands and Paper Adventure API
+softdepend: [Vault, PlaceholderAPI]
+
+commands:
+  zeneconomy:
+    description: Main admin command for ZenEconomy
+    permission: zeneconomy.admin
+    aliases: [ze, zecon, zenecon]
+  wallet:
+    description: View your multi-currency wallet GUI
+    permission: zeneconomy.command.wallet
+    aliases: [billetera]
+
+permissions:
+  zeneconomy.admin:
+    description: Full administration access to ZenEconomy
+    default: op
+  zeneconomy.command.wallet:
+    description: Allows viewing wallet GUI
+    default: true

@@ -1,0 +1,32 @@
+﻿# ZenEconomy Main Configuration
+# Designed for Paper 1.21+ (Java 21)
+
+# Storage Settings
+database:
+  # Supported types: SQLITE, MYSQL, MARIADB
+  type: SQLITE
+  sqlite:
+    file: "zeneconomy.db"
+  mysql:
+    host: "localhost"
+    port: 3306
+    database: "minecraft"
+    username: "root"
+    password: "password"
+    ssl: false
+    table-prefix: "ze_"
+  pool:
+    maximum-pool-size: 10
+    minimum-idle: 5
+    max-lifetime: 1800000 # 30 mins
+    connection-timeout: 10000 # 10s
+
+# Auto-save interval for cached player accounts (in seconds)
+auto-save-interval: 300
+
+# Top Balances Settings
+baltop:
+  # Cache update interval in seconds (prevents database lag)
+  cache-update-interval: 180
+  # Number of entries per page
+  page-size: 10

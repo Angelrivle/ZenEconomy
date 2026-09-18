@@ -1,0 +1,24 @@
+﻿id: gems
+name: "Gems"
+symbol: "✦"
+prefix: ""
+default: 10
+max: 10000000
+payable: true
+decimal: false
+max-decimals: 0
+vault: false
+balance-shorthand: false
+format: "<light_purple>%symbol%</light_purple> <green>%amount%</green> <gray>%currency%</gray>"
+format-short: "<light_purple>%symbol%</light_purple> <green>%amount%</green>"
+decimal-format: "#,##0"
+decimal-format-short: "#,##0"
+commands:
+  - gems
+  - gemas
+icon:
+  material: "EMERALD"
+  custom-model-data: 0
+  display-name: "<light_purple><bold>Gemas</bold></light_purple>"
+  lore:
+    - "<gray>Gemas mágicas del servidor."

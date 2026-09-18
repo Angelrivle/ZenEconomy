@@ -1,0 +1,24 @@
+﻿id: crystals
+name: "Crystals"
+symbol: "❖"
+prefix: ""
+default: 0
+max: -1
+payable: true
+decimal: true
+max-decimals: 2
+vault: false
+balance-shorthand: false
+format: "<aqua>%symbol%</aqua><green>%amount%</green> <aqua>%currency%</aqua>"
+format-short: "<aqua>%symbol%</aqua> <green>%amount%</green>"
+decimal-format: "#,##0.00"
+decimal-format-short: "#,##0.00"
+commands:
+  - crystals
+  - ecocrystals
+icon:
+  material: "AMETHYST_SHARD"
+  custom-model-data: 0
+  display-name: "<aqua><bold>Cristales</bold></aqua>"
+  lore:
+    - "<gray>Moneda especial obtenida en eventos y misiones."
